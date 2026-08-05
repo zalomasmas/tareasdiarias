@@ -19,6 +19,24 @@ node scripts/recolectar-sesiones.js
 Esto devuelve el texto de todas las sesiones de Claude Code (terminal y
 VS Code) modificadas hoy, sin importar el proyecto en que ocurrieron.
 
+## Paso 1b: Revisar claude.ai (opcional)
+
+Además de las sesiones de Claude Code, revisar si hay actividad
+relevante en claude.ai (la app/web de Claude), usando la herramienta
+"Claude in Chrome" con la sesión ya logueada del usuario (el navegador
+sandbox por defecto no tiene sesión iniciada y no sirve para esto):
+
+- Mirar las conversaciones recientes/de hoy en la lista de chats.
+- Si el usuario pasa un link de share (claude.ai/share/...), abrirlo
+  directamente con Claude in Chrome.
+- Extraer solo actividad real (tareas, coordinaciones, trabajo hecho).
+
+IMPORTANTE: nunca reproducir contraseñas, tokens, IPs internas, usuarios
+de acceso u otras credenciales en texto plano que aparezcan en esos
+chats. Si aparecen, describir la tarea en términos generales (ej.
+"configuración de accesos remotos para el cliente X") y avisar al
+usuario que se evitó incluir esos datos.
+
 ## Paso 2: Analizar y armar lista
 
 A partir de esa salida, identificar únicamente tareas, trabajos,
